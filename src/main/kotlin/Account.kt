@@ -1,6 +1,4 @@
-class Account {
-    var holder = ""
-    var numberAccount = 0
+class Account(var holder: String, var numberAccount: Int) {
     var balance = 0.0
         private set
 

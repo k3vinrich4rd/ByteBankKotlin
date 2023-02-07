@@ -1,9 +1,7 @@
 fun main() {
     println("Welcome to Bytebank\n")
 
-    val accountKevinRichard = Account()
-    accountKevinRichard.holder = "Kevin Richard"
-    accountKevinRichard.numberAccount = 1414
+    val accountKevinRichard = Account("Kevin Richard", 1414)
     accountKevinRichard.depositInAnAccount(100.00)
 
     println(accountKevinRichard.holder)
@@ -12,9 +10,7 @@ fun main() {
 
     println()
 
-    val accountLeticia = Account()
-    accountLeticia.holder = "Leticia"
-    accountLeticia.numberAccount = 1515
+    val accountLeticia = Account("Leticia", 1515)
     accountLeticia.depositInAnAccount(-50.00)
 
     println(accountLeticia.holder)
@@ -60,5 +56,4 @@ fun main() {
 
     println("Balance in account Kevin: ${accountKevinRichard.balance}")
     println("Balance in account Leticia: ${accountLeticia.balance}\n")
-
 }
