@@ -1,7 +1,7 @@
 class Account {
     var holder = ""
     var numberAccount = 0
-    var balance = 0.0
+    private var balance = 0.0
 
     //(Função) membro (métodos/comportamento)
     fun depositInAnAccount(value: Double) {
@@ -22,9 +22,21 @@ class Account {
     fun valueTransfer(value: Double, destiny: Account): Boolean { //early return
         if (balance >= value) { //
             balance -= value //Pega o saldo
-            destiny.balance += value //Incrementa(Conta de origem, mexe no saldo na conta destino)
+            destiny.depositInAnAccount(value) //Incrementa(Conta de origem, mexe no saldo na conta destino)
             return true
         }
         return false
+    }
+
+    fun getBalance(): Double {
+        return balance
+    }
+
+    fun setBalance(value: Double) {
+        if (value < 0) {
+            println("Unable to display a negative balance")
+        } else {
+            balance = value
+        }
     }
 }
