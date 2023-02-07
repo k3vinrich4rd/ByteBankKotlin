@@ -1,4 +1,10 @@
-class Account(var holder: String, var numberAccount: Int) {
+class Account
+    (
+    val holder: String,
+    val numberAccount: Int  // 0 Valor padrão (tirando a necessidade de informar um valor no argumento do constructor
+    // só se apenas quiser informar um valor
+) {
+
     var balance = 0.0
         private set
 

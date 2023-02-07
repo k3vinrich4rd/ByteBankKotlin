@@ -56,4 +56,11 @@ fun main() {
 
     println("Balance in account Kevin: ${accountKevinRichard.balance}")
     println("Balance in account Leticia: ${accountLeticia.balance}\n")
+
+
+    //Rotulo(Labels)
+    val accountElaine = Account(numberAccount = 1674, holder = "Elaine")
+    println("\n${accountElaine.holder}")
+    println(accountElaine.numberAccount)
+
 }
