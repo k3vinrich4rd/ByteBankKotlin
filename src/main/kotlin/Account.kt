@@ -1,6 +1,6 @@
 import java.sql.DriverManager.println
 
-class Account
+open class Account
     (
     val holder: String,
     val numberAccount: Int  // 0 Valor padrão (tirando a necessidade de informar um valor no argumento do constructor
@@ -19,7 +19,7 @@ class Account
     }
 
     //(Função) membro (métodos/comportamento)
-    fun withdrawMoneyFomTheAccount(value: Double) {
+    open fun withdrawMoneyFomTheAccount(value: Double) {
         if (balance < value) {
             println("Impossible to transfer money withdrawal")
         } else {

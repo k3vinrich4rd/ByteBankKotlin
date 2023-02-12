@@ -1,58 +1,40 @@
 fun main() {
     println("Welcome to Bytebank\n")
 
-    val employee = Employee(
-        "Kevin Richard",
-        "111.111.111-11",
-        1000.00,
-
-        )
-    println("Employee:")
-    println("Name ${employee.name}")
-    println("Cpf ${employee.cpf}")
-    println("Salary ${employee.salary}")
-    println("Bonus: ${employee.bonus}\n")
-
-
-    val manager = Manager(
-        "Elaine",
-        "222.222.222-22",
-        4000.00,
-        12345
+    val currentAccount = CurrentAccount(
+        holder = "Kevin Richard",
+        numberAccount = 1414
     )
 
-    println("Manager:")
-    println("Name ${manager.name}")
-    println("Cpf ${manager.cpf}")
-    println("Salary ${manager.salary}")
-    println("Bonus: ${manager.bonus}\n")
-
-    if (manager.authenticationEmployee(12345)) {
-        println("Successfully authenticated\n")
-    } else {
-        println("Unauthenticated\n")
-    }
-
-    val director = Director(
-        "Carlos Eduardo",
-        "333.333.333-33",
-        5000.00,
-        30.00,
-        2
+    val savingsAccount = SavingsAccount(
+        holder = "Vilma regiane",
+        numberAccount = 1111
     )
 
-    println("Director:")
-    println("Name ${director.name}")
-    println("Cpf ${director.cpf}")
-    println("Salary ${director.salary}")
-    println("Bonus: ${director.bonus}") //bonus = property
-    println("Profit Share: ${director.profitShare}\n")
+    currentAccount.depositInAnAccount(1000.00)
+    savingsAccount.depositInAnAccount(1000.00)
 
-    val bonusCalculator = BonusCalculator()
-    bonusCalculator.register(employee)
-    bonusCalculator.register(manager)
-    bonusCalculator.register(director)
+    println("Antes do saque: ")
+    println("Current account balance before withdrawal: ${currentAccount.balance}")
+    println("Savings account balance before withdrawal: ${savingsAccount.balance}\n")
 
-    //total de bonificações dada pela empresa aos funcionários
-    println("Total bonuses given by the company to employees: ${bonusCalculator.total}")
+    currentAccount.withdrawMoneyFomTheAccount(100.00)
+    savingsAccount.withdrawMoneyFomTheAccount(100.00)
+
+    println("Depois do saque: ")
+    println("Current account balance after withdrawal: ${currentAccount.balance}") //taxa de 0.1
+    println("Savings account balance after withdrawal: ${savingsAccount.balance}\n")
+
+    println("Antes da transferência: ")
+    println("Current account balance before transfer: ${currentAccount.balance}")
+    println("Savings account balance before transfer: ${savingsAccount.balance}\n")
+
+    currentAccount.valueTransfer(100.00, savingsAccount)
+    savingsAccount.valueTransfer(0.10, currentAccount)
+
+    println("Depois da transferência: ")
+    println("Current account balance after transfer: ${currentAccount.balance}")
+    println("Savings account balance after transfer: ${savingsAccount.balance}\n")
+
+
 }

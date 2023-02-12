@@ -3,6 +3,10 @@ open class Employee(
     val cpf: String,
     val salary: Double,
 ) {
+
     //Declarando uma property com valor implícito
-    open val bonus get() = salary * 0.1
+    open val bonus: Double get() {
+        return salary * 0.1
+    }
 }
+
