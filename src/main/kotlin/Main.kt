@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
     println("Welcome to Bytebank\n")
 
     val employee = Employee(
@@ -28,9 +28,9 @@ fun main(){
     println("Bonus: ${manager.bonus}\n")
 
     if (manager.authenticationEmployee(12345)) {
-        println("Successfully authenticated")
+        println("Successfully authenticated\n")
     } else {
-        println("Unauthenticated")
+        println("Unauthenticated\n")
     }
 
     val director = Director(

@@ -13,7 +13,7 @@ class Manager(
     //Declaração em forma de multiplos retornos
     override val bonus: Double
         get() {
-            return salary * 0.2
+            return super.bonus + salary
         }
 
 
