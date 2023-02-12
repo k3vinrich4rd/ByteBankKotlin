@@ -1,4 +1,4 @@
-fun main() {
+fun main(){
     println("Welcome to Bytebank\n")
 
     val employee = Employee(
@@ -11,7 +11,7 @@ fun main() {
     println("Name ${employee.name}")
     println("Cpf ${employee.cpf}")
     println("Salary ${employee.salary}")
-    println("Bonus: ${employee.bonus()}\n")
+    println("Bonus: ${employee.bonus}\n")
 
 
     val manager = Manager(
@@ -25,7 +25,7 @@ fun main() {
     println("Name ${manager.name}")
     println("Cpf ${manager.cpf}")
     println("Salary ${manager.salary}")
-    println("Bonus: ${manager.bonus()}\n")
+    println("Bonus: ${manager.bonus}\n")
 
     if (manager.authenticationEmployee(12345)) {
         println("Successfully authenticated")
@@ -45,6 +45,6 @@ fun main() {
     println("Name ${director.name}")
     println("Cpf ${director.cpf}")
     println("Salary ${director.salary}")
-    println("Bonus: ${director.bonus()}")
+    println("Bonus: ${director.bonus}") //bonus = property
     println("Bonus: ${director.profitShare}")
 }

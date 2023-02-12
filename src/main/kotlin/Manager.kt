@@ -8,12 +8,13 @@ class Manager(
     name = name,
     cpf = cpf,
     salary = salary
-)
-{
+) {
 
-//    fun bonus(): Double {
-//        return salary * 0.2
-//    }
+    //Declaração em forma de multiplos retornos
+    override val bonus: Double
+        get() {
+            return salary * 0.2
+        }
 
 
     fun authenticationEmployee(password: Int): Boolean {
