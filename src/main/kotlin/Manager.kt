@@ -13,16 +13,12 @@ class Manager(
     //Declaração em forma de multiplos retornos
     override val bonus: Double
         get() {
-            return super.bonus + salary
+            return salary * 0.1
         }
 
 
     fun authenticationEmployee(password: Int): Boolean {
-        if (this.password == password) {
-            return true
-        } else {
-            return false
-        }
+        return this.password == password
     }
 
 }

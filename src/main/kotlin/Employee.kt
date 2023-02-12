@@ -5,7 +5,5 @@ abstract class Employee(
 ) {
 
     //Declarando uma property com valor implícito
-    open val bonus: Double get() {
-        return salary * 0.1
-    }
+    abstract val bonus: Double
 }

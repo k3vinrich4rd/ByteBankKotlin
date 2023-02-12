@@ -13,15 +13,14 @@ class Director(
 
     //Não vai ter mais o backing field porque vai ter o mesmo comportamento de uma função
     //Super.bonus, chama algum membro pertencente a classe mãe (é possível fazer com property)
-    override val bonus get() = super.bonus + salary + profitShare
+    override val bonus: Double
+        get() {
+            return salary + profitShare
+        }
 
 
     fun authenticationEmployee(password: Int): Boolean {
-        if (this.password == password) {
-            return true
-        } else {
-            return false
-        }
-    }
+        return this.password == password
 
+    }
 }
