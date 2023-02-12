@@ -25,11 +25,26 @@ fun main() {
     println("Name ${manager.name}")
     println("Cpf ${manager.cpf}")
     println("Salary ${manager.salary}")
-    println("Bonus: ${manager.bonus()}")
+    println("Bonus: ${manager.bonus()}\n")
 
     if (manager.authenticationEmployee(12345)) {
         println("Successfully authenticated")
     } else {
         println("Unauthenticated")
     }
+
+    val director = Director(
+        "Carlos Eduardo",
+        "333.333.333-33",
+        5000.00,
+        30.00,
+        2
+    )
+
+    println("Director:")
+    println("Name ${director.name}")
+    println("Cpf ${director.cpf}")
+    println("Salary ${director.salary}")
+    println("Bonus: ${director.bonus()}")
+    println("Bonus: ${director.profitShare}")
 }

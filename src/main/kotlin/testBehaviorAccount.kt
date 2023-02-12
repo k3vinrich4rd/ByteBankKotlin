@@ -15,7 +15,7 @@ fun testBehaviorAccount() {
     println(accountLeticia.balance)
 
 
-//Deposito
+    //Deposito
     println("\nDeposited in account the Kevin Richard")
     accountKevinRichard.depositInAnAccount(50.00)
     println("Balance in account: ${accountKevinRichard.balance}\n")
@@ -24,7 +24,7 @@ fun testBehaviorAccount() {
     accountLeticia.depositInAnAccount(100.00)
     println("Balance in account: ${accountLeticia.balance} \n")
 
-//Saque
+    //Saque
     println("Withdrawing money from account Kevin: ")
     accountKevinRichard.withdrawMoneyFomTheAccount(250.00)
     println("Balance in account: ${accountKevinRichard.balance} \n")
@@ -34,7 +34,7 @@ fun testBehaviorAccount() {
     accountLeticia.withdrawMoneyFomTheAccount(100.00)
     println("Balance in account: ${accountLeticia.balance}\n")
 
-//Excesso de saque
+    //Excesso de saque
     println("Excess withdrawal from account: ${accountKevinRichard.holder} ")
     accountKevinRichard.withdrawMoneyFomTheAccount(500.00)
     println("Balance in account: ${accountKevinRichard.balance} \n")
@@ -43,7 +43,7 @@ fun testBehaviorAccount() {
     accountLeticia.withdrawMoneyFomTheAccount(500.00)
     println("Balance in account: ${accountLeticia.balance} \n")
 
-//Transferência
+    //Transferência
     println("Transfer to account ${accountLeticia.holder} from to account ${accountKevinRichard.holder}")
     if (accountLeticia.valueTransfer(300.00, accountKevinRichard)) {
         println("Successful transfer  ")
@@ -55,7 +55,7 @@ fun testBehaviorAccount() {
     println("Balance in account Leticia: ${accountLeticia.balance}\n")
 
 
-//Rotulo(Labels)
+    //Rotulo(Labels)
     val accountElaine = Account(numberAccount = 1674, holder = "Elaine")
     println("\n${accountElaine.holder}")
     println(accountElaine.numberAccount)

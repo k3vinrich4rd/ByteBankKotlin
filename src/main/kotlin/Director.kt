@@ -1,7 +1,8 @@
-class Manager(
+class Director(
     name: String,
     cpf: String,
     salary: Double,
+    val profitShare: Double,
     val password: Int
 
 ) : Employee( //Herança
