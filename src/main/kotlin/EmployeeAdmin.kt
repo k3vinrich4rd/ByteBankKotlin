@@ -1,13 +1,20 @@
 abstract class EmployeeAdmin(
-    val name: String,
-    val cpf: String,
-    val salary: Double,
+    name: String,
+    cpf: String,
+    salary: Double,
     val password: Int
 
+) : Employee(
+    name = name,
+    cpf = cpf,
+    salary = salary
 ) {
-
-    //Declarando uma property com valor implícito
-    abstract val bonus: Double
-
-    abstract fun authenticationEmployee(password: Int): Boolean
+    //Função que autentica manager e director
+    fun authenticationEmployee(password: Int): Boolean {
+        if (this.password == password) {
+            return true
+        }
+        return false
+    }
 }
+

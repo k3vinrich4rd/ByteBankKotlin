@@ -17,9 +17,4 @@ class Manager(
             return salary * 0.1
         }
 
-    override fun authenticationEmployee(password: Int): Boolean {
-        TODO("Not yet implemented")
-    }
-
-
 }

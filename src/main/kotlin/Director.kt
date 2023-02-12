@@ -20,10 +20,5 @@ class Director(
             return salary + profitShare
         }
 
-    override fun authenticationEmployee(password: Int): Boolean {
-        TODO("Not yet implemented")
-    }
-
 
 }
-
