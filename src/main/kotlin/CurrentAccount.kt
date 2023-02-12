@@ -7,7 +7,9 @@ class CurrentAccount(
 ) {
     override fun withdrawMoneyFomTheAccount(value: Double) {
         val valueWithRate = value + 0.1 //valor com taxa
-        super.withdrawMoneyFomTheAccount(valueWithRate)
+        if (this.balance >= valueWithRate){
+            this.balance -= valueWithRate
+        }
     }
 
 }

@@ -6,6 +6,11 @@ class SavingsAccount(
     numberAccount = numberAccount
 
 ) {
+    override fun withdrawMoneyFomTheAccount(value: Double) {
+        if (this.balance >= value){
+            this.balance -= value
+        }
+    }
 
 
 }

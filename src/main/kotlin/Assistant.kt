@@ -4,7 +4,7 @@ class Assistant(
     salary: Double,
 
 
-) : Employee( //Herança
+    ) : Employee( //Herança
     name = name,
     cpf = cpf,
     salary = salary
