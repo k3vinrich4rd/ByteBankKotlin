@@ -2,13 +2,15 @@ class Director(
     name: String,
     cpf: String,
     salary: Double,
-    val profitShare: Double,
-    val password: Int
+    password: Int,
+    val profitShare: Double
 
-) : Employee( //Herança
+) : EmployeeAdmin( //Herança
     name = name,
     cpf = cpf,
-    salary = salary
+    salary = salary,
+    password = password
+
 ) {
 
     //Não vai ter mais o backing field porque vai ter o mesmo comportamento de uma função
@@ -18,9 +20,10 @@ class Director(
             return salary + profitShare
         }
 
-
-    fun authenticationEmployee(password: Int): Boolean {
-        return this.password == password
-
+    override fun authenticationEmployee(password: Int): Boolean {
+        TODO("Not yet implemented")
     }
+
+
 }
+

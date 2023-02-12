@@ -35,8 +35,8 @@ fun testEmployee() {
         "Carlos Eduardo",
         "333.333.333-33",
         5000.00,
-        30.00,
-        2
+        3000,
+        200.00
     )
 
     println("Director:")

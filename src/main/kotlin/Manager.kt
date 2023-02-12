@@ -2,12 +2,13 @@ class Manager(
     name: String,
     cpf: String,
     salary: Double,
-    val password: Int
+    password: Int
 
-) : Employee( //Herança
+) : EmployeeAdmin( //Herança
     name = name,
     cpf = cpf,
-    salary = salary
+    salary = salary,
+    password = password
 ) {
 
     //Declaração em forma de multiplos retornos
@@ -16,9 +17,9 @@ class Manager(
             return salary * 0.1
         }
 
-
-    fun authenticationEmployee(password: Int): Boolean {
-        return this.password == password
+    override fun authenticationEmployee(password: Int): Boolean {
+        TODO("Not yet implemented")
     }
+
 
 }
