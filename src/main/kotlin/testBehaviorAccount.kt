@@ -7,7 +7,6 @@ fun testBehaviorAccount() {
     println(accountKevinRichard.balance)
 
     println()
-
     val accountLeticia = Account("Leticia", 1515)
     accountLeticia.depositInAnAccount(-50.00)
 
