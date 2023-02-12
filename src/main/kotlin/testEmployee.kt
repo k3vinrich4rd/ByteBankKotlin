@@ -1,15 +1,15 @@
 fun testEmployee() {
-    val employee = Employee(
+    val analyst1 = Analyst(
         "Kevin Richard",
         "111.111.111-11",
         1000.00,
 
         )
-    println("Employee:")
-    println("Name ${employee.name}")
-    println("Cpf ${employee.cpf}")
-    println("Salary ${employee.salary}")
-    println("Bonus: ${employee.bonus}\n")
+    println("Analyst1:")
+    println("Name ${analyst1.name}")
+    println("Cpf ${analyst1.cpf}")
+    println("Salary ${analyst1.salary}")
+    println("Bonus: ${analyst1.bonus}\n")
 
 
     val manager = Manager(
@@ -52,19 +52,18 @@ fun testEmployee() {
         println("Status authentication: Unauthenticated\n")
     }
 
-
-    val analyst = Analyst("Rafael", "555.555.555-55", 5000.00)
-    println("Analyst:")
-    println("Name ${analyst.name}")
-    println("Cpf ${analyst.cpf}")
-    println("Salary ${analyst.salary}")
-    println("Bonus: ${analyst.bonus}\n")
+    val analyst2 = Analyst("Rafael", "555.555.555-55", 5000.00)
+    println("Analyst2:")
+    println("Name ${analyst2.name}")
+    println("Cpf ${analyst2.cpf}")
+    println("Salary ${analyst2.salary}")
+    println("Bonus: ${analyst2.bonus}\n")
 
     val bonusCalculator = BonusCalculator()
-    bonusCalculator.register(employee)
+    bonusCalculator.register(analyst1)
     bonusCalculator.register(manager)
     bonusCalculator.register(director)
-    bonusCalculator.register(analyst)
+    bonusCalculator.register(analyst2)
 
     //total de bonificações dada pela empresa aos funcionários
     println("Total bonuses given by the company to employees: ${bonusCalculator.total}")

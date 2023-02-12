@@ -1,4 +1,4 @@
-open class Employee(
+abstract class Employee(
     val name: String,
     val cpf: String,
     val salary: Double,
@@ -9,4 +9,3 @@ open class Employee(
         return salary * 0.1
     }
 }
-
