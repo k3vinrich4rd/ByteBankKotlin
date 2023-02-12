@@ -46,5 +46,13 @@ fun main() {
     println("Cpf ${director.cpf}")
     println("Salary ${director.salary}")
     println("Bonus: ${director.bonus}") //bonus = property
-    println("Bonus: ${director.profitShare}")
+    println("Profit Share: ${director.profitShare}\n")
+
+    val bonusCalculator = BonusCalculator()
+    bonusCalculator.register(employee)
+    bonusCalculator.register(manager)
+    bonusCalculator.register(director)
+
+    //total de bonificações dada pela empresa aos funcionários
+    println("Total bonuses given by the company to employees: ${bonusCalculator.total}")
 }
