@@ -4,7 +4,7 @@ class AccountSavings(
 ) : Account(
     holder = holder,
     numberAccount = numberAccount
-), AccountTranfer { //Implementação da ‘interface’
+), AccountTransfer { //Implementação da ‘interface’
 
     //Método abstrato
     override fun withdrawMoneyFomTheAccount(value: Double) {
