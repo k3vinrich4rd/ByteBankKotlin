@@ -8,7 +8,9 @@ class AccountSalary(
 ) {
     //Método abstrato
     override fun withdrawMoneyFomTheAccount(value: Double) {
-        TODO("Not yet implemented")
+        if (this.balance >= value){
+            balance -= value
+        }
     }
 
 }

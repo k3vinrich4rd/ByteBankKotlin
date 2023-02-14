@@ -17,4 +17,5 @@ class Manager(
             return salary * 0.1
         }
 
+
 }

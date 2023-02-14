@@ -1,7 +1,7 @@
 class SystemIntern {
 
-    fun toEnter(employeeAdmin: EmployeeAdmin, password: Int) {
-        if (employeeAdmin.authenticationEmployee(password)) {
+    fun toEnter(employeeAdmin: Authenticated, password: Int) {
+        if (employeeAdmin.authenticated(password)) {
             println("Welcome to Bytebank")
         } else {
             println("Authentication failed")

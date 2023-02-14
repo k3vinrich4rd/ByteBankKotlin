@@ -8,9 +8,9 @@ abstract class EmployeeAdmin(
     name = name,
     cpf = cpf,
     salary = salary
-) {
-    //Função que autentica ‘manager’ e director
-    fun authenticationEmployee(password: Int): Boolean {
+), Authenticated {
+
+    override fun authenticated(password: Int): Boolean {
         if (this.password == password) {
             return true
         }

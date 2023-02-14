@@ -23,6 +23,7 @@ fun authenticatedForehead() {
     val systemIntern = SystemIntern()
     systemIntern.toEnter(manager, 100)
     systemIntern.toEnter(director, 200)
+    systemIntern.toEnter(client, 1234)
     // systemIntern.toEnter(client, 1111)
 
 }

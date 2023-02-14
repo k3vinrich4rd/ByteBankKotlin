@@ -25,7 +25,7 @@ fun testEmployee() {
     println("Salary ${manager.salary}")
     println("Bonus: ${manager.bonus}")
 
-    if (manager.authenticationEmployee(12345)) {
+    if (manager.authenticated(12345)) {
         println("Status authentication: Successfully authenticated\n")
     } else {
         println("Status authentication: Unauthenticated\n")
@@ -46,7 +46,7 @@ fun testEmployee() {
     println("Bonus: ${director.bonus}") //bonus = property
     println("Profit Share: ${director.profitShare}")
 
-    if (director.authenticationEmployee(1)) {
+    if (director.authenticated(1)) {
         println("Status authentication: Successfully authenticated\n")
     } else {
         println("Status authentication: Unauthenticated\n")

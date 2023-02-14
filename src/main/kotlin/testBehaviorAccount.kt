@@ -45,7 +45,7 @@ fun testBehaviorAccount() {
 
     //Transferência
     println("Transfer to account ${accountLeticia.holder} from to account ${accountKevinRichard.holder}")
-    if (accountLeticia.valueTransfer(300.00, accountKevinRichard)) {
+    if (accountLeticia.accountTransfer(300.00, accountKevinRichard)) {
         println("Successful transfer  ")
     } else {
         println("Unsuccessful transfer ")
