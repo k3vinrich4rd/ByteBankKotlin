@@ -3,7 +3,6 @@ class Analyst(
     cpf: String,
     salary: Double,
 
-
     ) : Employee( //Herança
     name = name,
     cpf = cpf,
@@ -11,7 +10,7 @@ class Analyst(
 ) {
 
     //Property em forma de linha de expressão
-    override val bonus: Double =  salary * 0.1
+    override val bonus: Double = salary * 0.1
 
 
 }

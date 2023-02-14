@@ -1,5 +1,5 @@
 fun testBehaviorAccount() {
-    val accountKevinRichard = CurrentAccount("Kevin Richard", 1414)
+    val accountKevinRichard = AccountCurrent("Kevin Richard", 1414)
     accountKevinRichard.depositInAnAccount(100.00)
 
     println(accountKevinRichard.holder)
@@ -7,7 +7,7 @@ fun testBehaviorAccount() {
     println(accountKevinRichard.balance)
 
     println()
-    val accountLeticia = SavingsAccount("Leticia", 1515)
+    val accountLeticia = AccountSavings("Leticia", 1515)
     accountLeticia.depositInAnAccount(-50.00)
 
     println(accountLeticia.holder)
@@ -56,7 +56,7 @@ fun testBehaviorAccount() {
 
 
     //Rotulo(Labels)
-    val accountElaine = CurrentAccount(numberAccount = 1674, holder = "Elaine")
+    val accountElaine = AccountCurrent(numberAccount = 1674, holder = "Elaine")
     println("\n${accountElaine.holder}")
     println(accountElaine.numberAccount)
 }

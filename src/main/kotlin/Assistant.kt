@@ -3,7 +3,6 @@ class Assistant(
     cpf: String,
     salary: Double,
 
-
     ) : Employee( //Herança
     name = name,
     cpf = cpf,

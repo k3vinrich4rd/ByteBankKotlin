@@ -1,10 +1,10 @@
 fun testDifferentAccounts() {
-    val currentAccount = CurrentAccount(
+    val currentAccount = AccountCurrent(
         holder = "Kevin Richard",
         numberAccount = 1414
     )
 
-    val savingsAccount = SavingsAccount(
+    val savingsAccount = AccountSavings(
         holder = "Vilma regiane",
         numberAccount = 1111
     )
