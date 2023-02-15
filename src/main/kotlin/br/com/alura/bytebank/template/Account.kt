@@ -1,6 +1,4 @@
-package template
-
-import java.sql.DriverManager.println
+package br.com.alura.bytebank.template
 
 abstract class Account(
     val holder: String,

@@ -1,7 +1,7 @@
-package test
+package br.com.alura.bytebank.test
 
-import template.AccountCurrent
-import template.AccountSavings
+import br.com.alura.bytebank.template.AccountCurrent
+import br.com.alura.bytebank.template.AccountSavings
 
 fun testBehaviorAccount() {
     val accountKevinRichard = AccountCurrent("Kevin Richard", 1414)

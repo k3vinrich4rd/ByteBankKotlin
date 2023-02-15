@@ -1,6 +1,4 @@
-package template
-
-import template.EmployeeAdmin
+package br.com.alura.bytebank.template
 
 class Manager(
     name: String,

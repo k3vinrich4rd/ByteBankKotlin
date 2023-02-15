@@ -1,6 +1,4 @@
-package template
-
-import template.Account
+package br.com.alura.bytebank.template
 
 class AccountSalary(
     holder: String,
@@ -12,7 +10,7 @@ class AccountSalary(
 ) {
     //Método abstrato
     override fun withdrawMoneyFomTheAccount(value: Double) {
-        if (this.balance >= value){
+        if (this.balance >= value) {
             balance -= value
         }
     }

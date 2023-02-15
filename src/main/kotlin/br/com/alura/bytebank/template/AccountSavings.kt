@@ -1,4 +1,4 @@
-package template
+package br.com.alura.bytebank.template
 
 class AccountSavings(
     holder: String,

@@ -1,9 +1,6 @@
-package test
+package br.com.alura.bytebank.test
 
-import template.Manager
-import template.SystemIntern
-import template.Client
-import template.Director
+import br.com.alura.bytebank.template.* //O '*' Siginifica que temos acesso a tudo que está no package "templates"
 
 fun authenticatedForehead() {
     val manager = Manager(

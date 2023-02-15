@@ -1,6 +1,4 @@
-package template
-
-import template.Authenticated
+package br.com.alura.bytebank.template
 
 class SystemIntern {
 

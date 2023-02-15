@@ -1,9 +1,9 @@
-package test
+package br.com.alura.bytebank.test
 
-import template.Analyst
-import template.BonusCalculator
-import template.Director
-import template.Manager
+import br.com.alura.bytebank.template.Analyst
+import br.com.alura.bytebank.template.BonusCalculator
+import br.com.alura.bytebank.template.Director
+import br.com.alura.bytebank.template.Manager
 
 fun testEmployee() {
     val analyst1 = Analyst(

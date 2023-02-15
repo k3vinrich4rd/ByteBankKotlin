@@ -1,4 +1,4 @@
-package template
+package br.com.alura.bytebank.template
 
 class BonusCalculator { //Faz um cálculo geral da bonificação dada aos funcionários da empresa
 

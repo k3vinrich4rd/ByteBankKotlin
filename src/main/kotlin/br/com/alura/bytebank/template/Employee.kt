@@ -1,4 +1,4 @@
-package template
+package br.com.alura.bytebank.template
 
 abstract class Employee(
     val name: String,

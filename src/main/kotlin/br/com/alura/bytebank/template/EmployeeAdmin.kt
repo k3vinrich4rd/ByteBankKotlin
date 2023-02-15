@@ -1,7 +1,4 @@
-package template
-
-import template.Authenticated
-import template.Employee
+package br.com.alura.bytebank.template
 
 abstract class EmployeeAdmin(
     name: String,

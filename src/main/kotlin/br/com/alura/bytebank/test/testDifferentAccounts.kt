@@ -1,8 +1,8 @@
-package test
+package br.com.alura.bytebank.test
 
-import template.AccountCurrent
-import template.AccountSalary
-import template.AccountSavings
+import br.com.alura.bytebank.template.AccountCurrent
+import br.com.alura.bytebank.template.AccountSalary
+import br.com.alura.bytebank.template.AccountSavings
 
 fun testDifferentAccounts() {
     val currentAccount = AccountCurrent(
