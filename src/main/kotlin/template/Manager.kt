@@ -1,3 +1,7 @@
+package template
+
+import template.EmployeeAdmin
+
 class Manager(
     name: String,
     cpf: String,

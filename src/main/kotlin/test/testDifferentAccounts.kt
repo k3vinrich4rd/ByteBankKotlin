@@ -1,3 +1,9 @@
+package test
+
+import template.AccountCurrent
+import template.AccountSalary
+import template.AccountSavings
+
 fun testDifferentAccounts() {
     val currentAccount = AccountCurrent(
         holder = "Kevin Richard",

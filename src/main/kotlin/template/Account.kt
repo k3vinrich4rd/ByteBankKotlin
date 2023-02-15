@@ -1,3 +1,5 @@
+package template
+
 import java.sql.DriverManager.println
 
 abstract class Account(

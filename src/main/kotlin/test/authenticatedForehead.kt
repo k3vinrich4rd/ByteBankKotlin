@@ -1,3 +1,10 @@
+package test
+
+import template.Manager
+import template.SystemIntern
+import template.Client
+import template.Director
+
 fun authenticatedForehead() {
     val manager = Manager(
         name = "Kevin Richard",

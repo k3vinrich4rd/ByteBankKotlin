@@ -1,3 +1,7 @@
+package template
+
+import template.Authenticated
+
 class Client(
     val name: String,
     val cpf: String,

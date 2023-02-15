@@ -1,3 +1,8 @@
+package template
+
+import template.Authenticated
+import template.Employee
+
 abstract class EmployeeAdmin(
     name: String,
     cpf: String,

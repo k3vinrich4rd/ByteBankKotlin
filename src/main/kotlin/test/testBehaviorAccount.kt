@@ -1,3 +1,8 @@
+package test
+
+import template.AccountCurrent
+import template.AccountSavings
+
 fun testBehaviorAccount() {
     val accountKevinRichard = AccountCurrent("Kevin Richard", 1414)
     accountKevinRichard.depositInAnAccount(100.00)

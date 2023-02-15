@@ -1,3 +1,7 @@
+package template
+
+import template.Authenticated
+
 class SystemIntern {
 
     fun toEnter(employeeAdmin: Authenticated, password: Int) {

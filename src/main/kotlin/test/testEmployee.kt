@@ -1,3 +1,10 @@
+package test
+
+import template.Analyst
+import template.BonusCalculator
+import template.Director
+import template.Manager
+
 fun testEmployee() {
     val analyst1 = Analyst(
         "Kevin Richard",
@@ -19,7 +26,7 @@ fun testEmployee() {
         12345
     )
 
-    println("Manager:")
+    println("template.Manager:")
     println("Name ${manager.name}")
     println("Cpf ${manager.cpf}")
     println("Salary ${manager.salary}")
@@ -39,7 +46,7 @@ fun testEmployee() {
         200.00
     )
 
-    println("Director:")
+    println("template.Director:")
     println("Name ${director.name}")
     println("Cpf ${director.cpf}")
     println("Salary ${director.salary}")

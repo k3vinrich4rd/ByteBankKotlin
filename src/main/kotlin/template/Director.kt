@@ -1,3 +1,5 @@
+package template
+
 class Director(
     name: String,
     cpf: String,

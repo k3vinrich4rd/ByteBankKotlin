@@ -1,3 +1,5 @@
+package template
+
 class Analyst(
     name: String,
     cpf: String,

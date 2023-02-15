@@ -1,16 +1,17 @@
-class AccountCurrent(
+package template
+
+class AccountSavings(
     holder: String,
     numberAccount: Int
 ) : Account(
     holder = holder,
     numberAccount = numberAccount
-), AccountTransfer { //Implementação da 'Interface'
+), AccountTransfer { //Implementação da ‘interface’
 
     //Método abstrato
     override fun withdrawMoneyFomTheAccount(value: Double) {
-        val valueWithRate = value + 0.1 //valor com taxa
-        if (this.balance >= valueWithRate) {
-            this.balance -= valueWithRate
+        if (this.balance >= value) {
+            this.balance -= value
         }
     }
 

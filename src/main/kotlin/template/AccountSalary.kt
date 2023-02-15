@@ -1,3 +1,7 @@
+package template
+
+import template.Account
+
 class AccountSalary(
     holder: String,
     numberAccount: Int  // 0 Valor padrão (tirando a necessidade de informar um valor no argumento do constructor

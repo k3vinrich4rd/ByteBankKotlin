@@ -1,3 +1,5 @@
+package template
+
 class Assistant(
     name: String,
     cpf: String,
