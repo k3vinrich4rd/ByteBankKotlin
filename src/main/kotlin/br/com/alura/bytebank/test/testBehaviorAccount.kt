@@ -2,9 +2,17 @@ package br.com.alura.bytebank.test
 
 import br.com.alura.bytebank.template.AccountCurrent
 import br.com.alura.bytebank.template.AccountSavings
+import br.com.alura.bytebank.template.Client
 
 fun testBehaviorAccount() {
-    val accountKevinRichard = AccountCurrent("Kevin Richard", 1414)
+    //Outra maneira de mandar uma property via construtor
+    val accountKevinRichard = AccountCurrent(
+        Client(
+            name = "Ketelyn Mayara",
+            cpf = "353535353",
+            password = 2
+        ), 1414
+    )
     accountKevinRichard.depositInAnAccount(100.00)
 
     println(accountKevinRichard.holder)
@@ -12,7 +20,15 @@ fun testBehaviorAccount() {
     println(accountKevinRichard.balance)
 
     println()
-    val accountLeticia = AccountSavings("Leticia", 1515)
+
+    //Outra maneira de mandar uma property via construtor
+    val accountLeticia = AccountSavings(
+        Client(
+            name = "Leticia",
+            cpf = "4234234234",
+            password = 2
+        ), 1515
+    )
     accountLeticia.depositInAnAccount(-50.00)
 
     println(accountLeticia.holder)
@@ -59,9 +75,16 @@ fun testBehaviorAccount() {
     println("Balance in account Kevin: ${accountKevinRichard.balance}")
     println("Balance in account Leticia: ${accountLeticia.balance}\n")
 
-
+    //Outra maneira de mandar uma property via construtor
     //Rotulo(Labels)
-    val accountElaine = AccountCurrent(numberAccount = 1674, holder = "Elaine")
-    println("\n${accountElaine.holder}")
-    println(accountElaine.numberAccount)
+
+    val accountFelipe = AccountCurrent(
+        Client(
+            name = "Felipe",
+            cpf = "42342342344",
+            password = 1
+        ), 1674
+    )
+    println("\n${accountFelipe.numberAccount}")
+    println(accountFelipe.numberAccount)
 }

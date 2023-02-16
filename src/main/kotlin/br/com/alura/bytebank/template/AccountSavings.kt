@@ -1,7 +1,7 @@
 package br.com.alura.bytebank.template
 
 class AccountSavings(
-    holder: String,
+    holder: Client,
     numberAccount: Int
 ) : Account(
     holder = holder,

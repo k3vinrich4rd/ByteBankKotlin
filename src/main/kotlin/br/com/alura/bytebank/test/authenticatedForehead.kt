@@ -1,6 +1,9 @@
 package br.com.alura.bytebank.test
 
-import br.com.alura.bytebank.template.* //O '*' Siginifica que temos acesso a tudo que está no package "templates"
+import br.com.alura.bytebank.template.Client
+import br.com.alura.bytebank.template.Director
+import br.com.alura.bytebank.template.Manager
+import br.com.alura.bytebank.template.SystemIntern
 
 fun authenticatedForehead() {
     val manager = Manager(
@@ -20,14 +23,14 @@ fun authenticatedForehead() {
 
     val client = Client(
         name = "Grazi",
-        "333.333.333-33",
+        cpf = "333.333.333-33",
         password = 1234
     )
 
+
     val systemIntern = SystemIntern()
-    systemIntern.toEnter(manager, 100)
-    systemIntern.toEnter(director, 200)
+    systemIntern.toEnter(manager, 1000)
+    systemIntern.toEnter(director, 2000)
     systemIntern.toEnter(client, 1234)
-    // systemIntern.toEnter(client, 1111)
 
 }
