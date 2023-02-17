@@ -1,8 +1,5 @@
 package br.com.alura.bytebank.template
 
-var accountsTotal = 0 //Inicialização da variável global
-    private set //Property global com o set privado
-
 //Fazendo o valor dessa property não ser modificado em qualquer ponto do código
 abstract class Account(
     val holder: Client, //Composição
@@ -12,8 +9,18 @@ abstract class Account(
     open var balance = 0.0
         protected set
 
-    init {//Executa um código antes de instânciar qualquer objeto filho de account
-        accountsTotal++ //Incremento da variável global (código)
+    //Nome do object declaration: "Count"
+    companion object { //Não é necessário colocar o nome quando se trabalha com companion object
+        //Mas continua sendo um object declaration
+        //Companheiro do objeto
+        var total = 0 //Deixei a property pois somente o sistema pode alterar seu valor
+            //Seu acesso agora é somente para leitura escrita é impossível
+            private set
+    }
+
+    init {//Executa um código antes de instanciar qualquer objeto filho de account
+        //Ele tem um nome por debaixo dos panos chamado de companion
+        Companion.total++
     }
 
     fun depositInAnAccount(value: Double) {  //(Função) membro (métodos/comportamento)
