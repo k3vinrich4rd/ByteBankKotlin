@@ -19,5 +19,7 @@ class Manager(
             return salary * 0.1
         }
 
+    //Sobrescrita da função do comportamento feito na ‘interface’ (template.Authenticated) e Classe (template.EmployeeAdmin)
+    //Essa sobrescrita está acontecendo, pois, ambos tem a mesma assinatura
 
 }

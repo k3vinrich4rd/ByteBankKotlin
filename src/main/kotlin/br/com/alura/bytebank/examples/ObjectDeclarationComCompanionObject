@@ -1,3 +1,8 @@
+/*
+Companion Object (Objetos companheiros): Faz que um objeto declaration consiga compartilhar seus membros
+quando está dentro de uma classe, dando acesso de modificação apenas a classe (dependendo da restrição)
+?*
+
 package br.com.alura.bytebank.template
 
 //Fazendo o valor dessa property não ser modificado em qualquer ponto do código
@@ -10,7 +15,7 @@ abstract class Account(
         protected set
 
     //Nome do object declaration: "Count"
-    companion object Count { //Não é necessário colocar o nome quando se trabalha com companion object
+    companion object Count{ //Não é necessário colocar o nome quando se trabalha com companion object
         //Mas continua sendo um object declaration
         //Companheiro do objeto
         var total = 0 //Deixei a property pois somente o sistema pode alterar seu valor
@@ -20,7 +25,7 @@ abstract class Account(
 
     init {//Executa um código antes de instanciar qualquer objeto filho de account
         //Ele tem um nome por debaixo dos panos chamado de companion
-        Count.total++ //Não é necessário usar o count, pois ele é um membro
+        total++
         //Exemplo: Companion.total++
     }
 
@@ -32,5 +37,3 @@ abstract class Account(
 
     //(Função) membro (métodos/comportamento abstrato)
     abstract fun withdrawMoneyFomTheAccount(value: Double)
-
-}

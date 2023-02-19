@@ -1,0 +1,15 @@
+fun register(employee: Any) { //Se utilizamos sem a conversão seria impossivel, pois any tem seus próprios membros
+        val newEmployee: Employee = employee as Employee //Casting -  as = como
+        this.total += employee.bonus //Não é necessário usar o newEmployee por conta do smart cast
+    }
+
+     fun register(employee: Any) { //Se utilizamos sem a conversão seria impossivel, pois any tem seus próprios membros
+            val newEmployee: Employee = employee as Employee //Casting -  as = como
+            this.total += employee.bonus //Não é necessário usar o newEmployee por conta do smart cast
+        }
+
+        //Outro exemplo:
+          fun register(employee: Any) { //Se utilizamos sem a conversão seria impossivel, pois any tem seus próprios membros
+                employee as Employee //Casting -  as = como
+                this.total += employee.bonus //Não é necessário usar o newEmployee por conta do smart cast
+            }

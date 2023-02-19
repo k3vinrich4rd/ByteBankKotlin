@@ -18,6 +18,10 @@ class BonusCalculator { //Faz um cálculo geral da bonificação dada aos funcio
         this.total += employee.bonus
     }
 
+
+}
+
+
 //    fun register(manager: template.Manager) {
 //        this.total += manager.bonus
 //
@@ -26,4 +30,4 @@ class BonusCalculator { //Faz um cálculo geral da bonificação dada aos funcio
 //    fun register(director: template.Director) {
 //        this.total += director.bonus
 //    }
-}
+

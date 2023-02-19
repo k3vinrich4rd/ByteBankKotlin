@@ -7,13 +7,14 @@ class Director(
     password: Int,
     val profitShare: Double
 
-) : EmployeeAdmin( //Herança
+) : EmployeeAdmin(
+    //Herança
     name = name,
     cpf = cpf,
     salary = salary,
-    password = password
+    password = password,
 
-) {
+    ) {
 
     //Não vai ter mais o backing field porque vai ter o mesmo comportamento de uma função
     //Super.bonus, chama algum membro pertencente a classe mãe (é possível fazer com property)
@@ -24,3 +25,5 @@ class Director(
 
 
 }
+
+

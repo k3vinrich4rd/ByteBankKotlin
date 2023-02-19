@@ -1,0 +1,7 @@
+fun register(employee: Any) { //Se utilizamos sem a conversão seria impossivel, pois any tem seus próprios membros
+        if (employee is Employee) { //Casting -  as = como // Is = É
+            this.total += employee.bonus //Não é necessário usar o newEmployee por conta do smart cast
+        }
+
+
+    }

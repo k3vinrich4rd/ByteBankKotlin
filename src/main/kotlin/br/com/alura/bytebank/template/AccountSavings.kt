@@ -6,7 +6,7 @@ class AccountSavings(
 ) : Account(
     holder = holder,
     numberAccount = numberAccount
-), AccountTransfer { //Implementação da ‘interface’
+), AccountTransfer {
 
     //Método abstrato
     override fun withdrawMoneyFomTheAccount(value: Double) {
@@ -15,16 +15,17 @@ class AccountSavings(
         }
     }
 
-    //'Interface'
-    //Tira de uma conta origem(que chama o método) e manda para uma conta destino
+    //‘Interface’
+    //Tira de uma conta origem e manda para uma conta destino
     //A conta de origem da transferência, é o objeto que chamar o método
-    override fun accountTransfer(value: Double, destiny: Account): Boolean {  //early return
-        if (value >= balance) { //Faz a validação
+    override fun accountTransfer(value: Double, destiny: Account): Boolean {
+        if (balance >= value) { //
             balance -= value //Pega o saldo
             destiny.depositInAnAccount(value) //Incrementa(Conta de origem, mexe no saldo na conta destino)
             return true
         }
         return false
     }
+
 
 }

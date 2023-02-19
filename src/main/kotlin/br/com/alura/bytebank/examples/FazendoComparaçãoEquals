@@ -1,0 +1,16 @@
+//Regra de negócio para comparação entre objetos se ambros tiveram o mesmo cep retorne true
+  se não retorne false
+
+
+    override fun equals(other: Any?): Boolean {
+        if (other != null && other is Address) {
+            return this.cep == other.cep
+        }
+        return false
+    }
+
+//Main
+
+fun main() {
+    println(address.equals(address))
+}
