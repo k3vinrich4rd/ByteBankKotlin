@@ -15,7 +15,7 @@ fun testBehaviorAccount() {
     )
     accountKevinRichard.depositInAnAccount(100.00)
 
-    println(accountKevinRichard.holder)
+    println(accountKevinRichard.holder.name)
     println(accountKevinRichard.numberAccount)
     println(accountKevinRichard.balance)
 
@@ -31,7 +31,7 @@ fun testBehaviorAccount() {
     )
     accountLeticia.depositInAnAccount(-50.00)
 
-    println(accountLeticia.holder)
+    println(accountLeticia.holder.name)
     println(accountLeticia.numberAccount)
     println(accountLeticia.balance)
 
@@ -66,11 +66,7 @@ fun testBehaviorAccount() {
 
     //Transferência
     println("Transfer to account ${accountLeticia.holder} from to account ${accountKevinRichard.holder}")
-    if (accountLeticia.accountTransfer(300.00, accountKevinRichard)) {
-        println("Successful transfer  ")
-    } else {
-        println("Unsuccessful transfer ")
-    }
+
 
     println("Balance in account Kevin: ${accountKevinRichard.balance}")
     println("Balance in account Leticia: ${accountLeticia.balance}\n")

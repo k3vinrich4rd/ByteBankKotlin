@@ -15,4 +15,11 @@ class AccountSalary
         }
     }
 
+    //Delegação/Agregação
+    //Isso nos permite deixar a responsabilidade de implementação para uma classe que já fez isso
+    //Possibilitando a reutilização de código
+    override fun authenticated(password: Int): Boolean {
+        return holder.authenticated(password)
+    }
+
 }

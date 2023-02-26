@@ -12,7 +12,6 @@ fun testDifferentAccounts() {
     )
 
 
-
     val accountCurrent = AccountCurrent(
         holder = accountKevinRichard,
         numberAccount = 1414
@@ -25,19 +24,6 @@ fun testDifferentAccounts() {
     println("Cpf holder: ${accountCurrent.holder.cpf}")
     println("NumberAccount holder: ${accountCurrent.numberAccount}")
     println("Address holder: ${accountCurrent.holder.address.publicPlace}")
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     val accountEduardo = Client(
@@ -55,7 +41,7 @@ fun testDifferentAccounts() {
     val accountVilmaRegiane = Client("Vilma Regiane", "35353538383", password = 2324)
     val accountSalary = AccountSalary(
         holder = accountVilmaRegiane,
-        numberAccount = 5454
+        numberAccount = 5454,
     )
 
     accountCurrent.depositInAnAccount(1000.00)
@@ -81,8 +67,8 @@ fun testDifferentAccounts() {
     println("Savings account balance before transfer: ${accountSaving.balance}")
     println("Salary account balance before transfer: ${accountSalary.balance}\n")
 
-    accountCurrent.accountTransfer(100.00, accountSaving)
-    accountSaving.accountTransfer(0.10, accountCurrent)
+    accountCurrent.accountTransfer(100.00, accountSaving, 1234)
+    accountSaving.accountTransfer(0.10, accountCurrent, 2334)
 
 
 

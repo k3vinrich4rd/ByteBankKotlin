@@ -1,6 +1,9 @@
 package br.com.alura.bytebank.test
 
-import br.com.alura.bytebank.template.*
+import br.com.alura.bytebank.template.Client
+import br.com.alura.bytebank.template.Director
+import br.com.alura.bytebank.template.Manager
+import br.com.alura.bytebank.template.SystemIntern
 
 fun authenticatedForehead() {
     val manager = Manager(

@@ -1,0 +1,71 @@
+//Dessa forma, o código vai executar parcialmente
+//por conta da exception que vai estourar no meio da execução:
+
+fun testePilha() {
+
+    println("Inicio main")
+    funcao1()
+    println("fim do main")
+
+}
+
+fun funcao1() {
+    println("inicio função1")
+    try {
+        funcao2()
+    } catch (e: ClassCastException) {
+        println("ClassCastException foi pegada")
+    }
+
+    println("fim funcao1")
+
+}
+
+fun funcao2() {
+    println("inicio função2")
+
+    for (i in 1..5) {
+        println(i)
+        val address = Any()
+        address as Address
+
+    }
+    println("fim função2")
+}
+
+
+
+//Utilizando Try catch que vai executar completamente:
+
+fun testePilha() {
+
+    println("Inicio main")
+    funcao1()
+    println("fim do main")
+
+}
+
+fun funcao1() {
+    println("inicio função1")
+    funcao2()
+    println("fim função1")
+}
+
+fun funcao2() {
+    println("inicio função2")
+    try {
+        for (i in 1..5) {
+            println(i)
+            val address = Any()
+            address as Address
+
+        }
+
+    } catch (e: ClassCastException) {
+        println("ClassCastException foi pegada")
+    }
+
+    println("fim função2")
+
+
+}
