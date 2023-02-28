@@ -1,0 +1,10 @@
+package br.com.alura.bytebank
+
+import br.com.alura.bytebank.template.Address
+
+fun main() {
+
+    var addressNull: Address? = null
+    val addressNotNull: Address = addressNull!!
+    addressNotNull.publicPlace
+}
