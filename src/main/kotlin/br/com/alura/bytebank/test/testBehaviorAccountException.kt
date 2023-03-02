@@ -48,7 +48,7 @@ fun testBehaviorAccountException() {
         println(e.message)
         println(e.printStackTrace())
     } catch (e: FailedAuthenticatedException) {
-        println("Transfer failure")
+        println("")
         println(e.printStackTrace())
         //Técnica para tratar exceptions desconhecidas
         //Sempre deixar por último por ser a situação que não sabemos lidar
