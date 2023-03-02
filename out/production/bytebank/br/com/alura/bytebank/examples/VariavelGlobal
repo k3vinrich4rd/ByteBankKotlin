@@ -1,0 +1,42 @@
+var accountsTotal =  0  // Inicialização da variável global
+    private set // Property global com o set privado
+
+// Fazendo o valor dessa propriedade não ser modificado em qualquer ponto do código
+ classe  abstrata Conta (
+     titular do val :  Cliente ,
+    val  holder :  Client , // Composição
+    val  numberAccount :  Int   // 0 Valor padrão (tirando a necessidade de informar um valor no argumento do construtor
+    // só se apenas quiser informar um valor
+) {
+    var saldo =  0,0
+    saldo var aberto = 0,0
+        conjunto protegido
+
+    init { // Executa um código antes de instanciar qualquer objeto filho de conta
+        accountsTotal ++  // Incremento da variável global (código)
+    }
+
+    fun  depositInAnAccount ( value :  Double ) {   // (Função) membro (métodos/comportamento)
+        if (valor >  0 ) {
+            this .balance + = value // This = Significa que estamos mexendo em um atributo do próprio objeto
+
+
+   //Main
+   package br.com.alura.bytebank
+
+   import br.com.alura.bytebank.template.AccountSavings
+   import br.com.alura.bytebank.template.Address
+   import br.com.alura.bytebank.template.Client
+   import br.com.alura.bytebank.template.accountsTotal
+   import br.com.alura.bytebank.test.testDifferentAccounts
+
+   fun main() {
+
+       val test = Client("Mano Brown", "243423", Address(), 411)
+       AccountSavings(test, 5445254)
+
+       testDifferentAccounts()
+
+       println("Account total created: $accountsTotal")
+
+   }

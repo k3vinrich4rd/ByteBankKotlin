@@ -41,7 +41,7 @@ fun testBehaviorAccountException() {
     println("Transfer to account ${accountLeticia.holder.name} from to account ${accountKetelynMayara.holder.name}\n")
 
     try {
-        println(" ${accountKetelynMayara.accountTransfer(1.0, accountLeticia, 20)}")
+        println(" ${accountKetelynMayara.accountTransfer(10.0, accountLeticia, 2)}")
         println("transferência bem sucedida")
     } catch (e: InsufficientFundsException) {
         println("Transfer failure")

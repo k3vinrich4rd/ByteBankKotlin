@@ -1,0 +1,7 @@
+//É necessário fazer um safe call para fazer o tratamento com o nullable
+    //Se for null retorna nulo se não executa a ação necessária
+    var addressNull: Address? = Address(publicPlace = "casa")
+    //val newPublicPlace: String? = addressNull?.publicPlace
+    addressNull.let { addressNull ->  //lambda
+        println(addressNull?.publicPlace)
+    }

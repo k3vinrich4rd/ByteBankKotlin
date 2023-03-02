@@ -1,0 +1,38 @@
+Equals = Compara se um objeto é igual a outro
+Exemplo:
+
+fun main() {
+
+    val address = Address()
+    val newAddress = Address()
+    println(address.equals(address))
+
+}
+
+hashCode = Devolve um hashCode do objeto (Identificação do objeto, como se fosse um rg do objeto)
+Exemplo:
+
+fun main() {
+
+    val address = Address()
+    val newAddress = Address()
+
+    println(address.hashCode())
+    println(newAddress.hashCode())
+
+}
+
+toString = Retorna a representação do objeto (Endereço de memória)
+Exemplo:
+
+fun main() {
+
+    val address = Address()
+    val newAddress = Address()
+
+    println(address.toString())
+    println(newAddress.toString())
+
+ //Outra forma de se fazer (toString)
+     println("${address.javaClass}@${Integer.toHexString(address.hashCode())}")
+}

@@ -1,0 +1,34 @@
+//Properties do Try Catch:
+fun testePilha() {
+
+    println("Inicio main")
+    funcao1()
+    println("fim do main")
+
+}
+
+fun funcao1() {
+    println("inicio função1")
+    try {
+        funcao2()
+    } catch (e: ClassCastException) {
+        println(e.message ) //Retorna o motivo do lançamento da exception com a justificativa
+        println(e.stackTrace) //É um objeto
+        println(e.cause) // Causa
+        e.printStackTrace()
+        println("ClassCastException foi pegada")
+    }
+    println("fim função1")
+}
+
+
+fun funcao2() {
+    println("inicio função2")
+    for (i in 1..5) {
+        println(i)
+        val address = Any()
+        address as Address
+
+    }
+    println("fim função2")
+}

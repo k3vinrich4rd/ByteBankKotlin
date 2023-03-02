@@ -1,0 +1,4 @@
+//Para fazer um hashCode de um objeto compatível ao outro
+    override fun hashCode(): Int {
+        return cep.hashCode()
+    }

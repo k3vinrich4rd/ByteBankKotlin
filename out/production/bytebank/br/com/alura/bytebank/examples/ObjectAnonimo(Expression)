@@ -1,0 +1,13 @@
+//Implementando uma interface
+
+
+    val account = object : Authenticated {
+        val name: String = "Kevin"
+        val cpf: String = "111.111.111-11"
+        val password: Int = 1111
+
+        override fun authenticated(password: Int) = this.password == password
+    }
+    val systemIntern = SystemIntern()
+    systemIntern.toEnter(account, 1111)
+}
