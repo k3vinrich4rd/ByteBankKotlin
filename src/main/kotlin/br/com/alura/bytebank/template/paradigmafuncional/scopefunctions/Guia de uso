@@ -1,0 +1,37 @@
+/*Scope functions: Fazem parte da biblioteca padrão do kotlin,
+e seu objetivo é ter um bloco de código, e dentro desse bloco de código
+vai ter um objeto de contexto
+As funções de escopo não introduz novas capacidades
+
+Diferenças: Context object (Objeto de contexto)
+it. -> Estamos falando de um objeto de contexto como um argumento de lambda
+(let e also)
+
+it:
+Uso: utilizar o let e o also quando estiver no contexto
+de membros que utilizam o argumento
+
+this -> Receptor (Não precisa referenciar o objeto
+uso comum: Quando queremos executar um código e chamar os próprios
+membros do objeto de contexto
+(run, with e apply)
+ */
+
+Retorno de valor:
+apply e also -> Retorna o contexto do objeto
+let, run e with -> Retorna o objeto da lambda
+
+
+run() sem extensão para executar qualquer instrução retornando ou não uma computação.
+also() para imprimir o que está acontecendo no código e devolver o objeto de contexto.
+apply() para inicializar o objeto de contexto e devolvê-lo.
+with() para computar e devolver algo utilizando os membros do objeto de contexto.
+
+
+Mesmo vendo as diferenças nas funções de escopo, é natural, em algum momento do código,
+não utilizar a função correta. Sendo assim, seguem mais alguns tópicos que podem ajudar
+a identificar os pontos:
+
+Chama um ou mais membros do objeto de contexto -> Utilize o objeto de contexto receiver.
+Não chama membros do objeto do contexto -> Utilize o objeto de contexto como argumento.
+Não faz a configuração do objeto, inicializações ou chamadas de membros -> Utilize ou let() ou also().

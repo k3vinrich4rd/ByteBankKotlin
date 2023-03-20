@@ -8,3 +8,4 @@ Seguindo a base de aprendizado apresentado nos cursos da instituição @ALura
     *Kotlin: herança, polimorfismo e Interface
     *Kotlin: recursos da linguagem com pacotes e composição
     *Kotlin: lidando com exceptions e referências nulas
+    *Kotlin: recursos do paradigma funcional

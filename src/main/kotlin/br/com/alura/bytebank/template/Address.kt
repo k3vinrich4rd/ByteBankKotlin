@@ -49,5 +49,12 @@ class Address(
         return result
     }
 
+    fun complete(): String {
+        return """ 
+$publicPlace - $number, $neighborhood, $city - $state
+$cep
+$complement       
+""".trimMargin()
+    }
 
 }
